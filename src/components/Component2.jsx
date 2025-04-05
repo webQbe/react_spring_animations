@@ -6,14 +6,16 @@ const Component2 = () => {
 
     const c2Style = useSpring({
         from: {
-                opacity: 0,                     
-                transform: 'translateY(-500px)' 
+                opacity: 0,         // start invisible                     
               }, 
-        to: { 
-                opacity: 1,                    
-                transform: 'translateY(0px)'   
+        to: {   
+                opacity: 1,         // animate to fully visible                  
     
             },   
+        config: {
+                    delay: 3000,    // wait 3 seconds before starting the animation
+                    duration: 3000  // take 3 seconds to complete the fade-in animation
+            }
       })
 
   return (

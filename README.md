@@ -4,7 +4,7 @@
 - Better performance in advanced applications: Apply animations without relying on React to render updates frame by frame 
 - Adding slide-down, fade-in effects to components 
 - Creating a counter by animating props or text
-- Creating button to fade-in and fade-out a component
+- Creating a button to fade-in and fade-out a component
 
 
 ## Getting Started
@@ -24,6 +24,7 @@
      ```
 6. Delete: `public/vite.svg`, `src/assets`, `src/index.css`
     1. Remove `import './index.css'` from `src/main.jsx`
+    2. Comment `<StrictMode>` and `</StrictMode>` tags in `src/main.jsx` tags just for testing animation issues 
     2. Modify `src/App.jsx` and Remove:
         ```
         import reactLogo from './assets/react.svg'

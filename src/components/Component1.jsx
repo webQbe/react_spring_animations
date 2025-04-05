@@ -5,8 +5,15 @@ export default function Component1() {
 
   // Define animation style object
   const c1Style = useSpring({
-    from: { opacity: 0 }, // Start from completely transparent
-    to: { opacity: 1 },   // Animate to fully visible
+    from: {
+            opacity: 0,                     // Start from completely transparent
+            transform: 'translateY(-500px)' // Start 500px above its normal position
+          }, 
+    to: { 
+            opacity: 1,                    // Animate to fully visible
+            transform: 'translateY(0px)'   // Slide down into place
+
+        },   
   })
 
   return (

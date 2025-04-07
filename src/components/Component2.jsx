@@ -18,6 +18,15 @@ const Component2 = () => {
             }
       })
 
+      const btn = {
+        background: '#333',        // black
+        color: '#fff',             // white
+        padding: '1rem 2rem',
+        border: 'none',
+        textTransform: 'uppercase', // Convert text to uppsercase
+        margin: '15px 0'
+      }
+
   return (
       <animated.div 
           style={{
@@ -34,6 +43,9 @@ const Component2 = () => {
             magni itaque laudantium necessitatibus reprehenderit? Officiis quaerat
             consequuntur maxime placeat!
           </p>
+          <button style={btn}>
+              Component3
+          </button>
     </animated.div>
   )
 }

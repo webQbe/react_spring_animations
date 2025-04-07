@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSpring, animated } from '@react-spring/web'
 
 
-const Component2 = () => {
+const Component2 = ({ toggle }) => {
 
     const c2Style = useSpring({
         from: {
@@ -43,7 +43,10 @@ const Component2 = () => {
             magni itaque laudantium necessitatibus reprehenderit? Officiis quaerat
             consequuntur maxime placeat!
           </p>
-          <button style={btn}>
+          <button 
+            style={btn}
+            onClick={toggle} // Toggle Component3 visibility
+          > 
               Component3
           </button>
     </animated.div>
